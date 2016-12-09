@@ -1,0 +1,13 @@
+<div ng-controller = 'jsonController'>
+	Search :<input type="text" ng-model="query">
+	<table>
+		<tr>
+			<th><a href="" ng-click = "sortField ='name';reverse =!reverse">Countries</a></th>
+			<th><a href="" ng-click = "sortField ='population';reverse =!reverse">Population</a></th>
+		</tr>
+		<tr ng-repeat ="country in countries | orderBy:sortField:reverse | filter:query ">
+			<td>{{country.name}}</td>
+			<td>{{country.population}}</td>
+		</tr>
+	</table>
+</div>

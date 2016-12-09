@@ -1,0 +1,13 @@
+<div ng-controller = 'jsonController'>
+	Search :<input type="text" ng-model="query">
+	<table>
+		<tr>
+			<th>Country</th>
+			<th>Population</th>
+		</tr>
+		<tr ng-repeat ="country in countries | filter:query">
+			<td>{{country.name}}</td>
+			<td>{{country.population}}</td>
+		</tr>
+	</table>
+</div>

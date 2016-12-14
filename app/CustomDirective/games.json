@@ -1,0 +1,10 @@
+[{
+	"name":"BasketBall",
+	"id" :1
+},{
+	"name":"Badminton",
+	"id" :2
+},{
+	"name":"VolleyBall",
+	"id":3
+}]

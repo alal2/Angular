@@ -13,6 +13,7 @@ angular.module('myApp', [
   'myApp.FilterAndSort',
   'myApp.WatchAndApply',
   'myApp.RouteExample',
+  'myApp.CustomDirective',
   'myApp.version'
 ]).
 config(['$locationProvider', '$routeProvider', function($locationProvider, $routeProvider) {

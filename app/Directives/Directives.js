@@ -5,11 +5,11 @@ angular.module('myApp.Directives', ['ngRoute'])
 .config(['$routeProvider', function($routeProvider) {
   $routeProvider.when('/Directives', {
     templateUrl: 'Directives/Directives.html',
-    controller: 'myController'
+    controller: 'directiveController'
   });
 }])
 
-.controller('myController',['$scope',function($scope){
+.controller('directiveController',['$scope',function($scope){
   	 	$scope.customer = {
   	 		name:'Ankita',
   	 		address: 'Sapient'

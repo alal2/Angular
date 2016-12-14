@@ -5,11 +5,11 @@ angular.module('myApp.UsingServices', ['ngRoute'])
 .config(['$routeProvider', function($routeProvider) {
   $routeProvider.when('/UsingServices', {
     templateUrl: 'UsingServices/UsingServices.html',
-    controller: 'myController'
+    controller: 'servicesController'
   });
 }])
 
-.controller('myController',['$scope','notify', function($scope,notify){
+.controller('servicesController',['$scope','notify', function($scope,notify){
 	$scope.callNotify = function(msg) {
 		notify(msg);
 	};

@@ -5,10 +5,10 @@ angular.module('myApp.WatchAndApply', ['ngRoute'])
 .config(['$routeProvider', function($routeProvider) {
   $routeProvider.when('/WatchAndApply', {
     templateUrl: 'WatchAndApply/WatchAndApply.html',
-    controller: 'myController'
+    controller: 'watchController'
   });
 }])
-.controller('myController',['$scope',function($scope){
+.controller('watchController',['$scope',function($scope){
 	$scope.firstName = 'John';
 
 	$scope.$watch('lastName',function(newVal, olVal){

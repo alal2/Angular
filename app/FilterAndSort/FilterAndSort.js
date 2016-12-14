@@ -5,11 +5,11 @@ angular.module('myApp.FilterAndSort', ['ngRoute'])
 .config(['$routeProvider', function($routeProvider) {
   $routeProvider.when('/FilterAndSort', {
     templateUrl: 'FilterAndSort/FilterAndSort.html',
-    controller: 'jsonController'
+    controller: 'filterController'
   });
 }])
 
-.controller('jsonController',['$scope',function(scope){
+.controller('filterController',['$scope',function(scope){
 			scope.countries = [{
 					"name":"India",
 					"population" :1056856565

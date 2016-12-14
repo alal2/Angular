@@ -12,6 +12,7 @@ angular.module('myApp', [
   'myApp.JsonFetch',
   'myApp.FilterAndSort',
   'myApp.WatchAndApply',
+  'myApp.RouteExample',
   'myApp.version'
 ]).
 config(['$locationProvider', '$routeProvider', function($locationProvider, $routeProvider) {

@@ -17,8 +17,8 @@ angular.module('myApp.ngSubmit', ['ngRoute'])
 		$scope.newEntry = '';
 	 }
 	}
-	$scope.remove =function(name) {
-		var index = $scope.names.indexOf(name);
-		$scope.names.splice(index,1);
+	$scope.remove =function($index) {
+	//	var index = $scope.names.indexOf(name); when name is passed as parameter
+		$scope.names.splice($index,1);
 	}
 }]);

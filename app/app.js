@@ -14,6 +14,7 @@ angular.module('myApp', [
   'myApp.WatchAndApply',
   'myApp.RouteExample',
   'myApp.CustomDirective',
+  'myApp.Form',
   'myApp.version'
 ]).
 config(['$locationProvider', '$routeProvider', function($locationProvider, $routeProvider) {
